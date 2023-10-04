@@ -1,0 +1,342 @@
+@import url(styles.css);
+
+@media screen and (min-width: 1001px) and (max-width: 1400px) {
+    .logo {
+        width: 30%;
+        margin-top: auto;
+    }
+
+    #intro {
+        margin: 20px 100px 20px 100px;
+    }
+
+    .post-wrapper {
+        height: calc(2em * 7);
+    }
+
+    #postimg {
+        height: 100%;
+    }
+
+    .carousel .prev {
+        left: 40px;
+
+    }
+
+    .carousel .next {
+        right: 40px;
+
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .logo {
+        width: 40%;
+        margin-top: auto;
+    }
+
+    .carousel .prev {
+        left: 20px;
+
+    }
+
+    .carousel .next {
+        right: 20px;
+
+    }
+
+    #intro {
+        margin: 20px 60px 20px 60px;
+    }
+
+    .post-wrapper {
+        max-width: 90vw;
+        height: calc(2em * 7);
+    }
+
+    #postimg {
+        height: 100%;
+        width: 70%;
+    }
+
+    #singletext {
+        padding: 0px 30px 0px 50px;
+    }
+
+    #singletext p {
+        font-size: 16px;
+    }
+
+    #singleimg {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 50%;
+        margin-top: 0px;
+    }
+
+    nav ul {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 2;
+    }
+
+    nav ul .socialmedia {
+        display: none;
+    }
+
+    #intro {
+        margin: 20px 40px 20px 40px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 160px;
+        margin-bottom: -20px;
+    }
+
+    .socialmedia-footer {
+        display: flex;
+        gap: 20px;
+    }
+
+    .carousel .next,
+    .carousel .prev {
+        display: none;
+    }
+
+    .carousel-wrapper .post {
+        width: 250px;
+        height: 270px;
+    }
+
+    #carousel-image {
+        width: 250px;
+    }
+
+    .carousel h2 {
+        font-size: 15px;
+        margin: 20px auto;
+    }
+
+    .post-wrapper {
+        max-width: 80vw;
+        flex-wrap: wrap;
+    }
+
+    #postimg {
+        width: 100%;
+    }
+
+    #post-text {
+        margin: 0px 5px 30px 20px;
+    }
+
+    #post-text h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    #aboutp {
+        margin: 0px 30px 0px 30px;
+        font-size: 16px;
+    }
+
+    .about {
+        gap: 30px;
+        margin-top: 10px;
+    }
+
+    #singletext {
+        padding: 0px 30px 0px 50px;
+    }
+
+    #singletext p {
+        font-size: 16px;
+    }
+
+    #singleimg {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    nav label {
+        height: 0;
+    }
+
+    label #btn {
+        display: block;
+        position: fixed;
+        right: 0;
+        padding: 30px 10px 15px 30px;
+        background-color: var(--dusty-rose);
+        border-radius: 0 0 0 100%;
+        margin-right: 0px;
+        z-index: 2;
+    }
+
+    nav ul {
+        position: fixed;
+        width: var(--full-size);
+        height: var(--full-size);
+        background: var(--dusty-rose);
+        text-align: center;
+        transition: all .5s;
+        right: -120%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 55px 0;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+        color: var(--black);
+    }
+
+    #check:checked~ul {
+        right: 0;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+        position: fixed;
+        right: 0;
+        padding: 30px 10px 15px 30px;
+        margin-right: 0px;
+        font-size: 40px;
+        z-index: 2;
+    }
+
+    nav ul .socialmedia {
+        display: none;
+    }
+
+    #intro {
+        margin: 5px 20px 5px 20px;
+    }
+
+    .carousel-wrapper .post {
+        width: 200px;
+        height: 260px;
+    }
+
+    #carousel-image {
+        width: 200px;
+    }
+
+    .carousel h2 {
+        font-size: 12px;
+        margin: 20px auto;
+    }
+
+    .carousel .next,
+    .carousel .prev {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 150px;
+        margin-bottom: -20px;
+    }
+
+    .socialmedia-footer {
+        display: flex;
+        gap: 20px;
+    }
+
+    .post-wrapper {
+        max-width: 80vw;
+        flex-wrap: wrap;
+    }
+
+    #post-text {
+        margin: 0px 0px 20px 20px;
+    }
+
+    #post-text h2 {
+        margin-bottom: 10px;
+    }
+
+    .about {
+        gap: 30px;
+        margin-top: 10px;
+    }
+
+    #aboutp {
+        margin: 0px 25px 0px 25px;
+        font-size: 12px;
+    }
+
+    #aboutimg {
+        max-height: 250px;
+    }
+
+    #singletext {
+        padding: 0px 20px 0px 30px;
+    }
+
+    #singletext p {
+        font-size: 15px;
+    }
+
+    #singleimg {
+        width: 90vw;
+    }
+}
