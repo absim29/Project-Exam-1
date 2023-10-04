@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sweet Treats - Create and inspire" />
+    <title>Sweet Treats | Blog Posts</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist-Script"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/40355c2075.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./javascript/allposts.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="allposts.html" class="currentpage">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="socialmedia">
+            <a
+              href="https://ro.pinterest.com/deeabyank/cake-ideas-tutorials/"
+              aria-label="pinterest"
+            >
+              <i class="fa-brands fa-pinterest fa-2xl" style="color: #763842">
+              </i>
+            </a>
+            <a
+              href="https://www.instagram.com/biancasweetcakes/"
+              aria-label="instagram"
+            >
+              <i class="fa-brands fa-instagram fa-2xl" style="color: #763842">
+              </i>
+            </a>
+            <a
+              href="https://www.facebook.com/biancasweetcakes/"
+              aria-label="facebook"
+            >
+              <i class="fa-brands fa-facebook-f fa-2xl" style="color: #763842">
+              </i>
+            </a>
+          </li>
+        </ul>
+        <label for="check" title="hamburger-menu">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+          <span class="hide">hamburger menu</span>
+        </label>
+        <video
+          autoplay
+          playsinline
+          muted
+          src="images/SweetTreats.mp4"
+          class="logo"
+          onclick="window.location.href='index.html';"
+        ></video>
+      </nav>
+    </header>
+    <main>
+      <h1>Blog Posts</h1>
+      <section class="search-bar">
+        <form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name="searchbar"
+            id="search-item"
+            placeholder="Search Blogs"
+            onkeyup="search()"
+            aria-label="searchbar"
+          />
+        </form>
+      </section>
+      <section class="posts" id="posts">
+        <div class="loader"></div>
+        <!-- <a href="singlepost.html"><div class="post-wrapper">
+                <img src="images/birthday-cake.jpg" alt="Image of dessert" id="postimg">
+                <div id="post-text">
+                    <h2>Title</h2>
+                    <p>Here is an introduction text to the blog post</p>
+                </div>
+            </div></a> -->
+      </section>
+      <button id="load-more">Load more</button>
+    </main>
+    <footer>
+      <div class="socialmedia-footer">
+        <a
+          href="https://ro.pinterest.com/deeabyank/cake-ideas-tutorials/"
+          aria-label="pinterest"
+        >
+          <i class="fa-brands fa-pinterest fa-2xl" style="color: #763842"> </i>
+        </a>
+        <a
+          href="https://www.instagram.com/biancasweetcakes/"
+          aria-label="instagram"
+        >
+          <i class="fa-brands fa-instagram fa-2xl" style="color: #763842"> </i>
+        </a>
+        <a
+          href="https://www.facebook.com/biancasweetcakes/"
+          aria-label="facebook"
+        >
+          <i class="fa-brands fa-facebook-f fa-2xl" style="color: #763842"> </i>
+        </a>
+      </div>
+      Copyright &copy; 2023 Sweet Treats
+    </footer>
+    <script src="./javascript/search.js"></script>
+  </body>
+</html>
