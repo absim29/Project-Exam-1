@@ -1,4 +1,4 @@
-const allPosts = 'https://cors.noroff.dev/www.sweet-treats.no/wp-json/wp/v2/posts';
+const allPosts = 'http://sweet-treats.local/wp-json/wp/v2/posts';
 
 
 export async function getPosts() {

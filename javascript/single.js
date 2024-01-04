@@ -2,7 +2,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const singlePost = 'https://cors.noroff.dev/www.sweet-treats.no/wp-json/wp/v2/posts/' + id + '?_embed';
+const singlePost = 'http://sweet-treats.local/wp-json/wp/v2/posts/' + id + '?_embed';
 
 
 
