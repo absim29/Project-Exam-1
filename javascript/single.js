@@ -1,10 +1,9 @@
+import { allPosts } from "./const.js";
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-// const singlePost = 'http://sweet-treats.local/wp-json/wp/v2/posts/' + id + '?_embed';
-const singlePost = 'https://sweet-treats-wp-blog.000webhostapp.com/wp-json/wp/v2/posts/' + id + '?_embed';
-
+const singlePost = allPosts + id + '?_embed';
 
 
 export async function getSinglePost() {
