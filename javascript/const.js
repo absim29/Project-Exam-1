@@ -1,4 +1,5 @@
-const allPosts = 'http://sweet-treats.local/wp-json/wp/v2/posts';
+// const allPosts = 'http://sweet-treats.local/wp-json/wp/v2/posts';
+const allPosts = 'https://sweet-treats-wp-blog.000webhostapp.com/wp-json/wp/v2/posts';
 
 
 export async function getPosts() {
